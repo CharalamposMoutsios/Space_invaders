@@ -30,6 +30,7 @@ enemyY = random.randint(50, 150)
 enemyX_change = 4
 enemyY_change = 40
 
+
 # Load the bullet image and set its initial state
 bulletImg = pygame.image.load("bullet.png")
 bulletX = 0
