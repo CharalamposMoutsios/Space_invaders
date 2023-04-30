@@ -6,7 +6,7 @@ import math
 pygame.init()
 
 # Create the screen
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((1040, 800))
 
 # Set the title and icon
 pygame.display.set_caption("Space Invaders")
@@ -146,6 +146,7 @@ while running:
         game_over_text = game_over_font.render("GAME OVER", True, (255, 255, 255))
         screen.blit(game_over_text, (200, 250))
         running = False
+
 
     # Update the display
     pygame.display.update()
