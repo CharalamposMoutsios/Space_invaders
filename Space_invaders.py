@@ -9,7 +9,7 @@ pygame.init()
 
 
 # Create the screen
-screen = pygame.display.set_mode((1040, 800))
+screen = pygame.display.set_mode((800, 600))
 
 # Set the title and icon
 pygame.display.set_caption("Space Invaders")
