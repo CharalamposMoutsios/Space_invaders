@@ -6,7 +6,8 @@ import pygame
 # Initialize Pygame
 pygame.init()
 
-
+# Create a clock object to limit the frame rate
+clock = pygame.time.Clock()
 
 # Create the screen
 screen = pygame.display.set_mode((800, 600))
@@ -18,6 +19,16 @@ pygame.display.set_icon(icon)
 
 # Load the background image
 background = pygame.image.load("background.png")
+
+# Load the background image
+background = pygame.image.load("background.png")
+
+# Resize the background image to the screen size
+background = pygame.transform.scale(background, (800, 600))
+# Draw the background
+screen.blit(background, (0, 0))
+
+
 
 
 
@@ -33,8 +44,8 @@ playerX_change = 0
 enemyImg = pygame.image.load("enemy.png")
 enemyX = random.randint(0, 736)
 enemyY = random.randint(50, 150)
-enemyX_change = 4
-enemyY_change = 40
+enemyX_change = 2
+enemyY_change = 2
 
 
 
@@ -85,6 +96,7 @@ running = True
 while running:
     # Fill the screen with the background image
     screen.blit(background, (0, 0))
+    clock.tick(60)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
