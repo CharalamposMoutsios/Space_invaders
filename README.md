@@ -23,3 +23,9 @@ How to Play
 Credits
 
     The original code for this game was written by Christian Thompson: Simple Python Space Invaders
+
+
+Extra
+
+    the game is still on progress, i need to find smaller png files for the spaceship,enemy and bullet, also the sound is not perfectly fit to the game, but i was just testing it. 
+    So definetely needs more development in order to have a nice looking and sound game like the classic space invaders from the old-school atari =)
