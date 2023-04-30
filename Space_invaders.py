@@ -157,6 +157,8 @@ while running:
         running = False
 
 
+
+
     # Update the display
     pygame.display.update()
 
