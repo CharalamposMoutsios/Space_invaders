@@ -26,6 +26,7 @@ playerX = 370
 playerY = 480
 playerX_change = 0
 
+
 # Load the enemy image and set its initial position
 enemyImg = pygame.image.load("enemy.png")
 enemyX = random.randint(0, 736)
