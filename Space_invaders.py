@@ -19,6 +19,7 @@ pygame.display.set_icon(icon)
 background = pygame.image.load("background.png")
 
 
+
 # Load the player image and set its initial position
 playerImg = pygame.image.load("player.png")
 playerX = 370
