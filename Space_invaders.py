@@ -14,7 +14,7 @@ icon = pygame.image.load("ufo.png")
 pygame.display.set_icon(icon)
 
 # Load the background image
-background = pygame.image.load("background.jpg")
+background = pygame.image.load("background.png")
 
 # Load the player image and set its initial position
 playerImg = pygame.image.load("player.png")
@@ -149,3 +149,4 @@ while running:
 
     # Update the display
     pygame.display.update()
+
