@@ -45,6 +45,7 @@ textX = 10
 textY = 10
 game_over_font = pygame.font.Font("freesansbold.ttf", 64)
 
+
 # Load the sound effects
 bullet_sound = pygame.mixer.Sound("laser.wav")
 background_music = pygame.mixer.music.load("background.wav")
