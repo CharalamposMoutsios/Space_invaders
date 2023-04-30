@@ -71,6 +71,7 @@ def isCollision(enemyX, enemyY, bulletX, bulletY):
     else:
         return False
 
+
 # Game loop
 score = 0
 running = True
