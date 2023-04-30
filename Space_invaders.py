@@ -130,6 +130,8 @@ while running:
         fire_bullet(bulletX, bulletY)
         bulletY -= bulletY_change
 
+
+
     # Check for collisions
     collision = isCollision(enemyX, enemyY, bulletX, bulletY)
     if collision:
