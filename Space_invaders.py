@@ -5,6 +5,8 @@ import math
 # Initialize Pygame
 pygame.init()
 
+
+
 # Create the screen
 screen = pygame.display.set_mode((1040, 800))
 
