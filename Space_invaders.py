@@ -141,6 +141,9 @@ while running:
         enemyX = random.randint(0, 736)
         enemyY = random.randint(50, 150)
 
+
+
+##
     # Draw the player, enemy, and score text
     player(playerX, playerY)
     enemy(enemyX, enemyY)
