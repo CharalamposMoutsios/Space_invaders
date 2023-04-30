@@ -110,3 +110,42 @@ while running:
     enemyX += enemyX_change
 
     # Add boundaries to the enemy's movement and change its direction
+    if enemyX <= 0:
+        enemyX_change = 4
+        enemyY += enemyY_change
+    elif enemyX >= 736:
+        enemyX_change = -4
+        enemyY += enemyY_change
+
+    # Move the bullet
+    if bulletY <= 0:
+        bulletY = 480
+        bullet_state = "ready"
+
+    if bullet_state == "fire":
+        fire_bullet(bulletX, bulletY)
+        bulletY -= bulletY_change
+
+    # Check for collisions
+    collision = isCollision(enemyX, enemyY, bulletX, bulletY)
+    if collision:
+        bulletY = 480
+        bullet_state = "ready"
+        score += 1
+        enemyX = random.randint(0, 736)
+        enemyY = random.randint(50, 150)
+
+    # Draw the player, enemy, and score text
+    player(playerX, playerY)
+    enemy(enemyX, enemyY)
+    score_text = font.render("Score: " + str(score), True, (255, 255, 255))
+    screen.blit(score_text, (textX, textY))
+
+    # Check for game over
+    if enemyY > 440:
+        game_over_text = game_over_font.render("GAME OVER", True, (255, 255, 255))
+        screen.blit(game_over_text, (200, 250))
+        running = False
+
+    # Update the display
+    pygame.display.update()
