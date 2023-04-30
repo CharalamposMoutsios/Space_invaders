@@ -39,13 +39,20 @@ playerX = 370
 playerY = 480
 playerX_change = 0
 
+# # Enemies
+# enemyImg = []
+# enemyX = []
+# enemyY = []
+# enemyX_change = []
+# enemyY_change = []
+# num_of_enemies = 5  # Updated to start the game with two enemies
 
 # Load the enemy image and set its initial position
 enemyImg = pygame.image.load("enemy.png")
 enemyX = random.randint(0, 736)
 enemyY = random.randint(50, 150)
 enemyX_change = 2
-enemyY_change = 2
+enemyY_change = 20
 
 
 
