@@ -167,9 +167,6 @@ while running:
         enemyX = random.randint(0, 736)
         enemyY = random.randint(50, 150)
 
-
-
-##
     # Draw the player, enemy, and score text
     player(playerX, playerY)
     enemy(enemyX, enemyY)
@@ -181,9 +178,6 @@ while running:
         game_over_text = game_over_font.render("GAME OVER", True, (255, 255, 255))
         screen.blit(game_over_text, (200, 250))
         running = False
-
-
-
 
     # Update the display
     pygame.display.update()
