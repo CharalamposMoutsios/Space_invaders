@@ -89,6 +89,7 @@ def fire_bullet(x, y):
     bullet_state = "fire"
     screen.blit(bulletImg, (x + 16, y + 10))
 
+
 def isCollision(enemyX, enemyY, bulletX, bulletY):
     distance = math.sqrt((math.pow(enemyX - bulletX, 2)) + (math.pow(enemyY - bulletY, 2)))
     if distance < 27:
@@ -170,7 +171,7 @@ while running:
     # Draw the player, enemy, and score text
     player(playerX, playerY)
     enemy(enemyX, enemyY)
-    score_text = font.render("Score: " + str(score), True, (255, 255, 255))
+    score_text = font.render("SCORE: " + str(score), True, (255, 255, 255))
     screen.blit(score_text, (textX, textY))
 
     # Check for game over
