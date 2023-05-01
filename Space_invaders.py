@@ -1,10 +1,10 @@
 import math
 import random
-
 import pygame
 
 # Initialize Pygame
 pygame.init()
+
 
 # Create a clock object to limit the frame rate
 clock = pygame.time.Clock()
